@@ -113,7 +113,7 @@ def obtener_heroes():
         return jsonify({'msg': 'heroe no encontrado'}), 400
 
 
-@app.route('/obtenerHeroes/<id>', methods =['GET'])
+@app.route('/obtenerHeroe/<id>', methods =['GET'])
 def obtener_heroe(id):
 
     heroe_hallado  = dbcontroller.leer_heroe(id,Super_Heroe)
